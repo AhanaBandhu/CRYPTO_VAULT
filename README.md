@@ -1,93 +1,72 @@
 # CryptoVault 🛡️  
-**A Decentralized Receipt Vault for Fraud-Proof Verification**
+**A Decentralized Financial Document Vault for Fraud-Proof Verification**
 
 ## 📌 Overview
-CryptoVault is a **decentralized receipt management web application** that allows users to securely store, manage, and verify digital receipts using **blockchain and IPFS**. The project addresses real-world problems such as **receipt loss, photoshopping, duplicate claims, and insurance fraud** by ensuring immutability and authenticity of receipts.
+CryptoVault is a **decentralized document management web application** that allows users to securely store, manage, and verify **receipts as well as critical financial documents** such as **insurance papers, bank checks, invoices, and reimbursement records** using **blockchain and IPFS**.
 
-Instead of relying on fragile paper receipts or centralized storage, CryptoVault provides a **tamper-proof, verifiable, and permanent solution** powered by Web3 technologies.
+The project addresses real-world problems like **document loss, photoshopping, duplicate claims, and financial fraud** by ensuring that every uploaded document is **tamper-proof, immutable, and verifiable**.
 
 ---
 
 ## ❗ Problem Statement
-- Paper receipts are easy to **lose, damage, or fade**
-- Digital receipts stored in galleries or drives can be **edited or photoshopped**
-- Fake or inflated receipts are often used for **insurance, warranty, and reimbursement fraud**
-- Merchants lack a **trusted and universal verification mechanism**
+- Financial documents like receipts, insurance papers, and checks are often **lost, damaged, or manipulated**
+- Digital copies stored in drives or galleries can be **edited or photoshopped**
+- Fake or inflated documents are frequently used for **insurance claims, reimbursements, and audits**
+- Merchants and organizations lack a **trusted verification mechanism**
 
 ---
 
 ## ✅ Solution
 CryptoVault solves these issues by:
-- Storing receipts on **IPFS** (decentralized storage)
-- Recording receipt proofs on the **blockchain**
+- Storing **encrypted financial documents** on **IPFS**
+- Recording only **cryptographic hashes and metadata** on the blockchain
 - Using **wallet-based authentication (MetaMask)** instead of traditional logins
-- Enabling **merchant-side verification** through blockchain records
+- Enabling **user–merchant verification** without exposing confidential document data
 
-Once uploaded, a receipt **cannot be altered or duplicated**, ensuring trust for both users and merchants.
+Any modification—even a single pixel—changes the document hash and **immediately detects tampering**.
 
 ---
 
 ## 🔄 Workflow
 1. User connects their **MetaMask wallet** (wallet address acts as identity).
-2. Receipt (image/PDF) is uploaded via the web interface.
-3. File is stored on **IPFS**, generating a unique **CID (hash)**.
-4. Receipt metadata (IPFS hash, timestamp, wallet address) is stored on an **Avalanche smart contract**.
-5. A blockchain transaction link (SnowTrace) is generated for verification.
-6. Merchants verify receipts using the **hash or transaction link**, ensuring authenticity.
+2. A document (receipt, insurance paper, check, invoice, etc.) is uploaded.
+3. The file is **encrypted and stored on IPFS**, generating a unique **CID**.
+4. The CID, hash, timestamp, and wallet address are stored via a **smart contract on Avalanche**.
+5. A **SnowTrace transaction link** is generated for verification.
+6. Merchants verify authenticity using the **hash or transaction link**, without accessing the raw document.
 
 ---
 
 ## ✨ Key Features
-- 🔐 Wallet-based authentication (no email/password required)
-- 📂 Secure receipt storage with date & time metadata
+- 🔐 Wallet-based authentication (MetaMask)
+- 📂 Secure storage for receipts and financial documents
 - 🌐 Decentralized storage using IPFS
 - ⛓️ Blockchain-backed immutability and transparency
-- 🧾 Dual interfaces for **Users** and **Merchants**
-- 🔍 Merchant verification via receipt hash / SnowTrace link
-- 🚫 Prevents photoshopped, duplicate, and fake receipts
-- 📸 Camera access to capture receipts directly from the browser
+- 🧾 Supports receipts, insurance papers, checks, invoices, and reimbursement documents
+- 🔍 Merchant verification via blockchain explorer links
+- 🚫 Prevents photoshopped, duplicate, or inflated claims
+- 📸 Camera access to capture documents directly from the browser
 
 ---
 
 ## 🛠️ Tech Stack
 **Frontend**
-- HTML
-- CSS
-- JavaScript
-- Browser Camera APIs
+- HTML, CSS, JavaScript
+- Camera APIs
 
 **Blockchain & Web3**
-- Solidity (Smart Contracts)
+- Solidity Smart Contracts
 - Avalanche Blockchain
 - MetaMask
 - Ethers.js / Web3.js
-- SnowTrace (Blockchain Explorer)
+- SnowTrace (Explorer)
 
 **Storage**
 - IPFS (Decentralized File Storage)
 
 ---
 
-## 🚀 Future Scope
-- 🤖 AI/ML-based receipt analysis & expense tracking
-- 🔔 Warranty expiry reminders via push notifications
-- 💬 Educational blockchain chatbot for users
-- 📊 Financial insights and spending categorization
-
----
-
-## 👤 My Contribution
-- Designed and implemented the **entire frontend UI**
-- Integrated **camera access** for capturing receipts
-- Built receipt gallery views with metadata
-- Styled and structured the application for usability and clarity
-
----
-
 ## 🏁 Conclusion
-CryptoVault demonstrates how **blockchain and decentralization** can be applied to solve everyday problems like receipt fraud and verification. By combining IPFS, smart contracts, and wallet-based authentication, the project delivers a **secure, transparent, and trustless receipt management system**.
+CryptoVault extends beyond simple receipt storage to become a **secure vault for financial documents**, ensuring authenticity, integrity, and trust. By combining **IPFS, encryption, and blockchain**, it enables fraud-proof verification while keeping sensitive information confidential and user-controlled.
 
----
-
-📌 *Built as part of the Avalanche Hackathon 2025.*
-
+📌 *Built as part of the Avalanche Hac*
